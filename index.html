@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragistration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper ">
+        <form class="mains  ">
+            <div class="leftside ">
+                <div class="leftsideupper  ">
+                    <h1 id="welcome">Welcome!</h1>
+                    <p id="lets">Let's create your account</p>
+                    
+                    <div class="emaildiv ">
+                        <fieldset>
+                            <legend>Email*</legend>
+                            <input type="email" name="inp" id="useremail" required>
+                        </fieldset>
+                        <p>Never shown to the public.</p>
+                    </div>
+
+                    <div class="usernamediv ">
+                        <input type="text" name="inp" id="username" placeholder="Username *" required>
+                        <p>unique, no spaces, short</p>
+                    </div> 
+
+                    <input type="text" name="inp" id="userfirstname" placeholder="First name *" required>
+                    <input type="text" name="inp" id="userlastname" placeholder="Last Name *" required>
+
+                    <div class="userpassworddiv usernamediv ">
+                        <input type="password" name="inp" id="usrpassword" placeholder="Password *" required>
+                        <p>at least 8 characters</p>
+                    </div> 
+
+                    <div class="usercompanydiv usernamediv ">
+                        <input type="text" name="inp" id="usercompany" placeholder="Company *" required>
+                        <p>Comapny</p>
+                    </div> 
+                    <div class="usercountrydiv  ">
+                        <select class="" name="" id="companyop" required>
+                            <option value="" selected>(select and option) *</option>
+                            <option value="">India</option>
+                            <option value="">England</option>
+                            <option value="">America</option>
+                            <option value="">China</option>
+                        </select>
+                        <p>Country</p>
+                    </div>
+                    <div class="terms ">
+                        <p>Terms of services *</p> 
+                        <input type="checkbox" name="inp" id="termcheck">
+                        <label for="">I accept the <span>terms of services</span></label>
+                    </div> 
+                </div> 
+                <hr>
+                <div class="leftsidelower  ">
+                    <button class="bcreate">Create your account</button>
+                    <button class="blog">Log In</button>
+                    <p class="bline">By registering, to agree to the <span>privacy policy</span> and <span>terms of service.</span></p>
+
+                </div>
+            </div>
+            <div class="rightside  ">
+                <div class="rdiv ">
+                    <img src="./google_13170545.png" alt="google"> 
+                    Sign in with Google
+                </div>
+                <div class="rdiv">
+                    <img src="./github.svg" alt="github"> 
+                    Log in with github
+                </div>
+                <div class="rdiv">
+                    <img src="./twitter.svg" alt="twitter"> 
+                    Sign in with Twitter
+                </div>
+                <div class="rdiv">
+                    <img src="./right arrow.svg" alt="arrow"> 
+                    With Empower
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

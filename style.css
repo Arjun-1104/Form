@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.border{
+    border: 1px solid red;
+}
+body{
+    font-family: sans-serif; 
+    background-color: black;
+    font-size: 16px;  
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+ .mains{
+    width: 50%;
+    height: 70%;
+    background-color: white;   
+}
+.leftside{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+.rightside{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.leftsideupper{
+    width: 100%;
+    height: 80%;
+    padding: 2% 4%;    
+}
+#lets{
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+.emaildiv{
+  width: 45%;
+  height: 16%;
+  float: left;
+  margin-right: 1.8em;
+}
+.emaildiv p , .usernamediv p , .usercountrydiv p{
+    font-size: 0.9em;
+    margin-top: 2px;
+    color: rgba(0, 0, 0, 0.7);
+}
+fieldset{
+    width: 100%;
+    height: 70%;
+    border-radius: 5px ;
+    border: 2px solid black;   
+}
+legend{
+    font-size: 0.7em;
+    margin-left: 0.8em;
+    color: rgba(0, 0, 0, 0.7);
+}
+fieldset input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0% 0% 0% 5%;
+    outline: none;   
+}
+fieldset:hover{
+    border-color: aqua;
+}
+.usernamediv{
+    width: 45%;
+    height: 16%;
+    float: left;  
+}
+.usernamediv input{
+   width: 100%;
+   height: 60%;
+   border-radius: 5px;
+   margin-top: 3%; 
+   padding-left: 4%;
+}
+#userfirstname{
+    margin-right: 5%;
+}
+#userfirstname, #userlastname{
+    width: 45%;
+    height: 10%;
+    border-radius: 5px;
+    margin-top: 4%;
+    padding-left: 2%;
+}
+.userpassworddiv{
+    margin-right: 30px;   
+}
+.userpassworddiv, .usercompanydiv{
+    margin-top: 3%;
+}
+.usercountrydiv{
+    width: 45%;
+    height: 10%;
+    float: left;
+    margin-top: 3%;
+    margin-right: 500px;
+    margin-bottom: 7%;
+}
+#companyop{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;     
+    border: 2px solid black;
+    padding-left: 5px;
+    color: rgba(0, 0, 0, 0.7);   
+}
+.leftsideupper p{
+    font-size: 0.7em;
+}
+.terms label{
+    font-size: 0.8em;
+}
+.terms label span{
+    color: rgb(43, 143, 143);
+}
+.leftsidelower{
+    width: 100%;
+    height: 20%;
+}
+.bcreate, .blog{
+    margin: 2%;
+    background-color: rgb(71, 181, 181);
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    cursor: pointer; 
+}
+.blog{  
+    background-color: rgb(196, 203, 58);  
+    color: white;
+} 
+.bline{
+    font-size: 0.8em;
+    margin: 1% 2%;
+}
+.bline span{
+    color: rgb(71, 181, 181);
+}
+
+.rightside{
+    background-color: rgb(71, 181, 181);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.rdiv{
+    background-color: white;
+    font-size: 0.9em;
+    width: 80%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5%;
+}
+.rdiv img{
+    width: 10%;
+    margin-right: 7%;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    .usercountrydiv{
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    body{
+        font-size: 14px;  
+    }
+    .mains{
+        width: 70%;
+    }
+    #welcome{
+        font-size: 1.7em;
+    }
+    .usercountrydiv{
+        margin-bottom: 7%;
+    }
+    #userfirstname{
+        margin-right: 6.3%;
+    }
+    .userpassworddiv{
+        margin-right: 26px;   
+    }
+    .rdiv{
+        font-size: 0.7em;
+    }
+    .rdiv img{
+        width: 13%;
+        margin-right: 3%;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px){
+    body{
+        font-size: 14px;  
+    }
+    .wrapper{
+        display: block;
+        align-items: start;
+        justify-content: start;   
+    }
+    .mains{
+        width: 100%;
+        height: 90.9%;
+    }
+    .leftside{
+        width: 100%;
+        float: left;
+    }
+    #welcome{
+        font-size: 1.7em;
+    }
+    .usercountrydiv{
+        margin-bottom: 7%;
+    }
+    #userfirstname{
+        margin-right: 5.5%;
+    }
+    .userpassworddiv{
+        margin-right: 26px;   
+    }
+    .rightside{
+        width: 100%;
+        height: 10%;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .rdiv{
+        background-color: transparent;
+        font-size: 0.65em;
+        width: 24%;
+        padding: 1px;
+        margin-top: 0%;
+        color: #fff;
+        font-weight: 500;
+   }
+   .rdiv img{
+        width: 13%;
+        margin-right: 5%;
+    }
+}
+@media (min-width: 375px) and (max-width: 423px){
+    body{
+        font-size: 14px;  
+    }
+    .mains{
+        width: 90%;
+    }
+    .leftside{
+        width: 100%;
+        height: 100%;
+    }
+    input ,select{
+        font-size: 0.8em;
+    }
+    #welcome{
+        font-size: 1.4em;
+    }
+    .usercountrydiv{
+        margin-bottom: 7%;
+    }
+    #userfirstname{
+        margin-right: 7%;
+    }
+    .userpassworddiv{
+        margin-right: 26px;   
+    }
+    .bcreate, .blog{
+        padding: 1.5%;
+    }
+    .rightside{
+        width: 100%;
+        height: 10%;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .rdiv{
+        background-color: transparent;
+        font-size: 0.7em;
+        width: 23%;
+        padding: 1px;
+        margin-top: 0%;
+        color: #fff;
+        font-weight: 600;
+   }
+   .rdiv img{
+        width: 13%;
+        margin-right: 5%;
+    }
+}
+@media (min-width: 320px) and (max-width: 374px){
+    .mains{
+        width: 100%;
+        height: 100%;
+    }
+    .leftside{
+        width: 100%;
+        height: 90%;
+    }
+    .rightside{
+        width: 100%;
+        height: 10%;
+    }
+    .leftsideupper{
+        height: 85%;
+    }
+    #welcome{
+        font-size: 1.4em;
+    }
+    #lets{
+        margin-bottom: 1em;
+    }
+    .emaildiv{
+        width: 100%;
+        height: 13%;
+        margin-right: 0em;
+    }
+    .emaildiv p , .usernamediv p , .usercountrydiv p{
+        font-size: 0.7em;
+    }
+    .usernamediv{
+        width: 100%;
+        height: 13%;
+    }
+    #userfirstname{
+        margin-right: 0%;
+    }
+     #userfirstname, #userlastname{
+        width: 49%;
+        height: 8%;
+        border-radius: 5px;
+        margin-top: 4%;
+        padding-left: 4%;
+    }
+    .usercountrydiv{
+        width: 100%;
+        height: 8%;
+        margin-top: 4%;
+        margin-right: 0px;
+        margin-bottom: 8%;
+    }
+    .leftsidelower{
+        height: 15%;
+    }
+    .rightside{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0px 5px;
+    }
+    .rdiv{
+        background-color: transparent;
+        font-size: 0.7em;
+        width: 50%;
+        padding: 0px;
+        margin-top: 0%;
+        color: #fff;
+        font-weight: 600;   
+    }
+}
+@media (min-width: 0px) and (max-width: 319px){
+    .mains{
+        width: 100%;
+        height: 100%;
+    }
+    .leftside{
+        width: 100%;
+        height: 90%;
+    }
+    .rightside{
+        width: 100%;
+        height: 10%;
+    }
+    .leftsideupper{
+        height: 85%;
+    }
+    #welcome{
+        font-size: 1.4em;
+    }
+    #lets{
+        margin-bottom: 1em;
+    }
+    .emaildiv{
+        width: 100%;
+        height: 13%;
+        margin-right: 0em;
+    }
+    .emaildiv p , .usernamediv p , .usercountrydiv p{
+        font-size: 0.7em;
+    }
+    .usernamediv{
+        width: 100%;
+        height: 13%;
+    }
+    #userfirstname{
+        margin-right: 0%;
+    }
+    #userfirstname, #userlastname{
+        width: 49%;
+        height: 8%;
+        border-radius: 5px;
+        margin-top: 4%;
+        padding-left: 4%;
+    }
+    .usercountrydiv{
+        width: 100%;
+        height: 8%;
+        margin-top: 4%;
+        margin-right: 0px;
+        margin-bottom: 8%;
+    }
+    .leftsidelower{
+        height: 15%;
+    }
+    .rightside{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0px 5px;
+    }
+    .rdiv{
+        background-color: transparent;
+        font-size: 0.7em;
+        width: 50%;
+        padding: 0px;
+        margin-top: 0%;
+        color: #fff;
+        font-weight: 600;   
+    }
+}
